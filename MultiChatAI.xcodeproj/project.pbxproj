@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A9BC5C32E70276700BC772A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC5C22E70276700BC772A /* ContentView.swift */; };
+		0A9BC5C72E702B3C00BC772A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC5C62E702B3C00BC772A /* Models.swift */; };
+		0A9BC5F62E70981000BC772A /* SQLite.swift in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BC5F52E70981000BC772A /* SQLite.swift */; };
+		0AA712002E6F76B30005664F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA711FF2E6F76B30005664F /* Secrets.swift */; };
+		0AA712062E6F7BB20005664F /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA712052E6F7BAE0005664F /* AIService.swift */; };
+		0AA712082E6F7C030005664F /* AIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA712072E6F7C020005664F /* AIViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AA711E32E6F75F70005664F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AA711CA2E6F75F50005664F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AA711D12E6F75F50005664F;
+			remoteInfo = AICompare;
+		};
+		0AA711ED2E6F75F70005664F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AA711CA2E6F75F50005664F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AA711D12E6F75F50005664F;
+			remoteInfo = AICompare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A9BC5C22E70276700BC772A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A9BC5C62E702B3C00BC772A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0A9BC5F52E70981000BC772A /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		0AA711D22E6F75F50005664F /* MultiChatAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiChatAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA711E22E6F75F70005664F /* MultiChatAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiChatAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA711EC2E6F75F70005664F /* MultiChatAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiChatAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA711FF2E6F76B30005664F /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		0AA712052E6F7BAE0005664F /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		0AA712072E6F7C020005664F /* AIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0AA711D42E6F75F50005664F /* MultiChatAI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MultiChatAI;
+			sourceTree = "<group>";
+		};
+		0AA711E52E6F75F70005664F /* MultiChatAITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MultiChatAITests;
+			sourceTree = "<group>";
+		};
+		0AA711EF2E6F75F70005664F /* MultiChatAIUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MultiChatAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AA711CF2E6F75F50005664F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA711DF2E6F75F70005664F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA711E92E6F75F70005664F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AA711C92E6F75F50005664F = {
+			isa = PBXGroup;
+			children = (
+				0A9BC5F52E70981000BC772A /* SQLite.swift */,
+				0A9BC5C62E702B3C00BC772A /* Models.swift */,
+				0A9BC5C22E70276700BC772A /* ContentView.swift */,
+				0AA712072E6F7C020005664F /* AIViewModel.swift */,
+				0AA712052E6F7BAE0005664F /* AIService.swift */,
+				0AA711FF2E6F76B30005664F /* Secrets.swift */,
+				0AA711D42E6F75F50005664F /* MultiChatAI */,
+				0AA711E52E6F75F70005664F /* MultiChatAITests */,
+				0AA711EF2E6F75F70005664F /* MultiChatAIUITests */,
+				0AA711D32E6F75F50005664F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AA711D32E6F75F50005664F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AA711D22E6F75F50005664F /* MultiChatAI.app */,
+				0AA711E22E6F75F70005664F /* MultiChatAITests.xctest */,
+				0AA711EC2E6F75F70005664F /* MultiChatAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AA711D12E6F75F50005664F /* MultiChatAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA711F62E6F75F70005664F /* Build configuration list for PBXNativeTarget "MultiChatAI" */;
+			buildPhases = (
+				0AA711CE2E6F75F50005664F /* Sources */,
+				0AA711CF2E6F75F50005664F /* Frameworks */,
+				0AA711D02E6F75F50005664F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0AA711D42E6F75F50005664F /* MultiChatAI */,
+			);
+			name = MultiChatAI;
+			packageProductDependencies = (
+			);
+			productName = AICompare;
+			productReference = 0AA711D22E6F75F50005664F /* MultiChatAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AA711E12E6F75F70005664F /* MultiChatAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA711F92E6F75F70005664F /* Build configuration list for PBXNativeTarget "MultiChatAITests" */;
+			buildPhases = (
+				0AA711DE2E6F75F70005664F /* Sources */,
+				0AA711DF2E6F75F70005664F /* Frameworks */,
+				0AA711E02E6F75F70005664F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AA711E42E6F75F70005664F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0AA711E52E6F75F70005664F /* MultiChatAITests */,
+			);
+			name = MultiChatAITests;
+			packageProductDependencies = (
+			);
+			productName = AICompareTests;
+			productReference = 0AA711E22E6F75F70005664F /* MultiChatAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AA711EB2E6F75F70005664F /* MultiChatAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA711FC2E6F75F70005664F /* Build configuration list for PBXNativeTarget "MultiChatAIUITests" */;
+			buildPhases = (
+				0AA711E82E6F75F70005664F /* Sources */,
+				0AA711E92E6F75F70005664F /* Frameworks */,
+				0AA711EA2E6F75F70005664F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AA711EE2E6F75F70005664F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0AA711EF2E6F75F70005664F /* MultiChatAIUITests */,
+			);
+			name = MultiChatAIUITests;
+			packageProductDependencies = (
+			);
+			productName = AICompareUITests;
+			productReference = 0AA711EC2E6F75F70005664F /* MultiChatAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AA711CA2E6F75F50005664F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					0AA711D12E6F75F50005664F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					0AA711E12E6F75F70005664F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 0AA711D12E6F75F50005664F;
+					};
+					0AA711EB2E6F75F70005664F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 0AA711D12E6F75F50005664F;
+					};
+				};
+			};
+			buildConfigurationList = 0AA711CD2E6F75F50005664F /* Build configuration list for PBXProject "MultiChatAI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AA711C92E6F75F50005664F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0AA711D32E6F75F50005664F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AA711D12E6F75F50005664F /* MultiChatAI */,
+				0AA711E12E6F75F70005664F /* MultiChatAITests */,
+				0AA711EB2E6F75F70005664F /* MultiChatAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AA711D02E6F75F50005664F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9BC5F62E70981000BC772A /* SQLite.swift in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA711E02E6F75F70005664F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA711EA2E6F75F70005664F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AA711CE2E6F75F50005664F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9BC5C72E702B3C00BC772A /* Models.swift in Sources */,
+				0AA712002E6F76B30005664F /* Secrets.swift in Sources */,
+				0A9BC5C32E70276700BC772A /* ContentView.swift in Sources */,
+				0AA712082E6F7C030005664F /* AIViewModel.swift in Sources */,
+				0AA712062E6F7BB20005664F /* AIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA711DE2E6F75F70005664F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA711E82E6F75F70005664F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AA711E42E6F75F70005664F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AA711D12E6F75F50005664F /* MultiChatAI */;
+			targetProxy = 0AA711E32E6F75F70005664F /* PBXContainerItemProxy */;
+		};
+		0AA711EE2E6F75F70005664F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AA711D12E6F75F50005664F /* MultiChatAI */;
+			targetProxy = 0AA711ED2E6F75F70005664F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AA711F42E6F75F70005664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AA711F52E6F75F70005664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AA711F72E6F75F70005664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiChatAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 7BB79YDD4K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VirtuousMight1858.AICompare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AA711F82E6F75F70005664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiChatAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 7BB79YDD4K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VirtuousMight1858.AICompare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0AA711FA2E6F75F70005664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BB79YDD4K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VirtuousMight1858.AICompareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiChatAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiChatAI";
+			};
+			name = Debug;
+		};
+		0AA711FB2E6F75F70005664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BB79YDD4K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VirtuousMight1858.AICompareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiChatAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MultiChatAI";
+			};
+			name = Release;
+		};
+		0AA711FD2E6F75F70005664F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BB79YDD4K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VirtuousMight1858.AICompareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AICompare;
+			};
+			name = Debug;
+		};
+		0AA711FE2E6F75F70005664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BB79YDD4K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VirtuousMight1858.AICompareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AICompare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AA711CD2E6F75F50005664F /* Build configuration list for PBXProject "MultiChatAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA711F42E6F75F70005664F /* Debug */,
+				0AA711F52E6F75F70005664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AA711F62E6F75F70005664F /* Build configuration list for PBXNativeTarget "MultiChatAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA711F72E6F75F70005664F /* Debug */,
+				0AA711F82E6F75F70005664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AA711F92E6F75F70005664F /* Build configuration list for PBXNativeTarget "MultiChatAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA711FA2E6F75F70005664F /* Debug */,
+				0AA711FB2E6F75F70005664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AA711FC2E6F75F70005664F /* Build configuration list for PBXNativeTarget "MultiChatAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA711FD2E6F75F70005664F /* Debug */,
+				0AA711FE2E6F75F70005664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AA711CA2E6F75F50005664F /* Project object */;
+}
